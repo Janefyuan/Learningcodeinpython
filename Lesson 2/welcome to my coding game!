@@ -1,0 +1,18 @@
+import curses
+
+def window(stdscr):
+
+  (sh, sw) = stdscr.getmaxyx()
+
+  # print the welcome message
+  msg = "Welcome to my coding game!"
+  stdscr.addstr(sh //2, sw //2 - len(msg) //2, msg)
+
+  while True: 
+    userKey = stdscr.getch()
+    stdscr.addstr.("ASCII: (0). format(useKey))
+
+  # wait user's input before finish
+  stdscr.getch()
+
+curses.wrapper(window)
